@@ -6,3 +6,6 @@
   "keywords": ["nginx", "docker", "proxy"],
   "stack": "container"
 }
+{
+   "stack": "heroku-20"
+}
