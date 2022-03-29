@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:latest
 
 LABEL com.github.pottava.application="docker-webui" \
       com.github.pottava.description="A web user-interface for docker." \
