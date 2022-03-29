@@ -13,9 +13,9 @@ RUN apk add --no-cache ca-certificates
 RUN apk --no-cache add --virtual build-dependencies bash gcc musl-dev openssl go git \
 
     # Install go 1.8
-    && GOLANG_VERSION=1.8.3 \
-    && GOLANG_SRC_URL=https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz \
-    && GOLANG_SRC_SHA256=5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6 \
+    && GOLANG_VERSION=1.18 \
+    && GOLANG_SRC_URL=https://go.dev/dl/go$GOLANG_VERSION.src.tar.gz \
+    && GOLANG_SRC_SHA256=38f423db4cc834883f2b52344282fa7a39fbb93650dc62a11fdf0be6409bdad6 \
     && export GOROOT_BOOTSTRAP="$(go env GOROOT)" \
     && wget -q "$GOLANG_SRC_URL" -O golang.tar.gz \
     && echo "$GOLANG_SRC_SHA256  golang.tar.gz" | sha256sum -c - \
