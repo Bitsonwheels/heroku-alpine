@@ -36,7 +36,7 @@ RUN     set -eux; yum groupinstall -y "Development Tools" && \
         mkdir -p /root/rpmbuild/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
 
 # deploying spec file, configuration and signature
-COPY    busybox/busybox-1.28.1.tar.bz2.sign /root/rpmbuild/SOURCES/
+COPY    busybox/busybox-1.28.1.tar.bz2 /root/rpmbuild/SOURCES/
 COPY    busybox/busybox-config /root/rpmbuild/SOURCES/
 COPY    busybox/busybox.spec /root/rpmbuild/SPECS/
 
